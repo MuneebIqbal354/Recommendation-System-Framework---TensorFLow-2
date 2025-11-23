@@ -4,7 +4,7 @@
 
 This repository hosts an actively developed collection of recommendation system algorithms implemented using **TensorFlow 2**. The project aims to provide a comprehensive library of both traditional and deep learning-based models for research and development purposes.
 
-## 📚 Supported Datasets
+## Supported Datasets
 
 The models in this framework are tested against a variety of popular datasets:
 
@@ -13,7 +13,7 @@ The models in this framework are tested against a variety of popular datasets:
 * **Book-Crossing:** Book ratings and user data.
 * **Satori:** Knowledge Graph data.
 
-## 🧠 Implemented Algorithms
+## Implemented Algorithms
 
 This repository includes implementations for a wide range of algorithms, covering Collaborative Filtering, Factorization Machines, and Graph Neural Networks.
 
@@ -26,21 +26,21 @@ This repository includes implementations for a wide range of algorithms, coverin
 * **Deep Learning:** DeepFM.
 * **Knowledge Graph & Network:** MKR (Multi-task Feature Learning for Knowledge Graph Enhanced Recommendation), RippleNet, KGCN (Knowledge Graph Convolutional Networks).
 
-## 📉 Evaluation Metrics
+## Evaluation Metrics
 
 Performance is evaluated using standard industry metrics:
 
 * **CTR Prediction:** AUC (Area Under Curve) and F1-Score.
 * **Top-K Recommendation:** Precision and Recall.
 
-## 🛠️ Requirements
+## Requirements
 
 Ensure your environment meets the following specifications:
 
 * **Python:** 3.8
 * **TensorFlow:** 2.3.2
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Installation & Setup
 It is recommended to open the parent directory of this file as a project in **PyCharm**.
@@ -68,3 +68,4 @@ Navigate to the specific algorithm folder you wish to test and execute the `main
 cd Recommender_System/algorithm/[ALGORITHM_NAME]
 python main.py
 ```
+
