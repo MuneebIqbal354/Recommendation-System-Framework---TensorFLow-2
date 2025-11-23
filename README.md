@@ -1,47 +1,70 @@
-# Recommender-System
+# Recommendation System Framework - TensorFLow 2
 
-A developing recommender system, implements in tensorflow 2.
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.3.2-orange.svg) ![Python](https://img.shields.io/badge/Python-3.8-blue.svg) ![Status](https://img.shields.io/badge/Status-Active-green.svg)
 
-Dataset: MovieLens-100k, MovieLens-1m, MovieLens-20m, lastfm, Book-Crossing, and some satori knowledge graph.
+This repository hosts an actively developed collection of recommendation system algorithms implemented using **TensorFlow 2**. The project aims to provide a comprehensive library of both traditional and deep learning-based models for research and development purposes.
 
-Algorithm: UserCF, ItemCF, LFM, SLIM, GMF, MLP, NeuMF, FM, DeepFM, MKR, RippleNet, KGCN and so on.
+## 📚 Supported Datasets
 
-Evaluation: ctr's auc f1 and topk's precision recall.
+The models in this framework are tested against a variety of popular datasets:
 
-## Requirements
+* **MovieLens:** Versions 100k, 1M, and 20M.
+* **Last.fm:** Music listening data.
+* **Book-Crossing:** Book ratings and user data.
+* **Satori:** Knowledge Graph data.
 
-* Python 3.8
-* Tensorflow 2.3.2
+## 🧠 Implemented Algorithms
 
-## Run
+This repository includes implementations for a wide range of algorithms, covering Collaborative Filtering, Factorization Machines, and Graph Neural Networks.
 
-Open parent directory of current file as project in PyCharm, set up Python 3.8 interpreter and pip install tensorflow==2.3.2.
 
-Go to Recommender_System/algorithm/xxx/main.py and run.
 
-MovieLens-20m is too large to upload. If you need it, [download](http://files.grouplens.org/datasets/movielens/ml-20m.zip) and put 'ml-20m' under 'Recommender_System/data/ds' folder.
+### Categories:
+* **Collaborative Filtering:** UserCF (User-based), ItemCF (Item-based).
+* **Latent Factor & Linear Models:** LFM (Latent Factor Model), SLIM (Sparse Linear Method), FM (Factorization Machines).
+* **Neural Collaborative Filtering:** GMF (Generalized Matrix Factorization), MLP (Multi-Layer Perceptron), NeuMF (Neural Matrix Factorization).
+* **Deep Learning:** DeepFM.
+* **Knowledge Graph & Network:** MKR (Multi-task Feature Learning for Knowledge Graph Enhanced Recommendation), RippleNet, KGCN (Knowledge Graph Convolutional Networks).
 
----
+## 📉 Evaluation Metrics
 
-# Recommender-System推荐系统
+Performance is evaluated using standard industry metrics:
 
-这是一个正在开发的基于tensorflow2实现的推荐系统。
+* **CTR Prediction:** AUC (Area Under Curve) and F1-Score.
+* **Top-K Recommendation:** Precision and Recall.
 
-数据集：电影MovieLens-100k, MovieLens-1m, MovieLens-20m，音乐lastfm，书Book-Crossing，以及一些satori知识图谱。
+## 🛠️ Requirements
 
-算法：UserCF（基于用户的协同过滤）, ItemCF（基于物品的协同过滤）, LFM, SLIM, GMF, MLP, NeuMF, FM, DeepFM, MKR, RippleNet, KGCN等。
+Ensure your environment meets the following specifications:
 
-评估指标：点击率预测ctr的auc和f1，topk评估的准确率precision和召回率recall。
+* **Python:** 3.8
+* **TensorFlow:** 2.3.2
 
-## 需求
+## 🚀 Getting Started
 
-* Python 3.8
-* Tensorflow 2.3.2
+### 1. Installation & Setup
+It is recommended to open the parent directory of this file as a project in **PyCharm**.
 
-## 运行
+Set up your interpreter to use **Python 3.8** and install the required dependencies:
 
-在PyCharm里面将此文件的父文件夹作为项目打开，设置好Python3.8的环境并使用pip安装tensorflow的2.3.2版本。
+```bash
+pip install tensorflow==2.3.2
+```
 
-到Recommender_System/algorithm/xxx/main.py源码文件下并点击运行。
+### 2. Dataset Configuration
+> **Note:** Due to file size limitations, the **MovieLens-20m** dataset is not included in this repository.
 
-MovieLens-20m数据集太大了因此不被包含在此项目文件中，如果你需要这个数据集，[下载MovieLens-20m](http://files.grouplens.org/datasets/movielens/ml-20m.zip)并将'ml-20m'文件夹放到'Recommender_System/data/ds'目录下。
+If you require the 20M dataset:
+1.  Download it manually from [GroupLens](https://grouplens.org/datasets/movielens/20m/).
+2.  Extract the contents.
+3.  Place the `ml-20m` folder into the following directory:
+    `Recommender_System/data/ds`
+
+### 3. Running the Models
+Navigate to the specific algorithm folder you wish to test and execute the `main.py` script. 
+
+**Example:**
+```bash
+cd Recommender_System/algorithm/[ALGORITHM_NAME]
+python main.py
+```
